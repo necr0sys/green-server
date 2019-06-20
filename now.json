@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "name": "my-express-project",
+  "builds": [
+    { "src": "public/**/*", "use": "@now/static" },
+    { "src": ".js", "use": "@now/node" }
+  ],
+  "routes": [{ "src": "/", "dest": "public/index.html" }]
+}
